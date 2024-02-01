@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="#"> <img src="logo.png" alt="Hamro Bhansa Logo">
+            Hamro Bhansa</a>
+        <div class="form-box" id="formbox">
+            <div class="btn-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()"><span id="span-login">Login</span></button>
+                <button type="button" class="toggle-btn" onclick="signup()"><span id="span-signup">Sign
+                        Up</span></button>
+            </div>
+
+            <form action="#" id="form-signup" class="input-group">
+                <input type="text" placeholder="Full Name" name="fullname" required><br>
+
+                <input type="tel" placeholder="Phone Number" name="phone" required><br>
+
+                <select name="faculty" class="select">
+                    <option>Select Faculty</option>
+                    <option>BIT</option>
+                    <option>BCS</option>
+                    <option>BBA</option>
+                    <option>BHM</option>
+                    <option>MBA</option>
+                    <option>MCS</option>
+                </select><br>
+
+                <select name="semester" class="select">
+                    <option>Select Semester</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                </select><br>
+
+                <input type="text" placeholder="LCID" name="lcid" required><br>
+
+                <input type="password" placeholder="Password" name="password" required><br>
+
+                <input type="password" placeholder="Confirm Password" name="confirm-password" required><br><br>
+
+                <input type="checkbox" class="checkbox"><span id="terms">I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn"><span id="span-color">Sign Up</span></button>
+                <p>Already have an account? <span onclick="login()">Login</span></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

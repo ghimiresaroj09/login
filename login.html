@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="#"> <img src="logo.png" alt="Hamro Bhansa Logo">
+            Hamro Bhansa</a>
+        <div class="form-box" id="formbox">
+            <div class="btn-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()"><span id="span-login">Login</span></button>
+                <button type="button" class="toggle-btn" onclick="signup()"><span id="span-signup">Sign
+                        Up</span></button>
+            </div>
+            <form action="#" id="form-login" class="input-group">
+                <input type="tel" class="input-field" placeholder="Phone Number" name="phone" required><br><br>
+                <input type="password" class="input-field" placeholder="Password" name="password" required><br><br>
+                <input type="checkbox" class="checkbox"><span id="remember-me">Remember Me</span><span
+                    id="forget-password">Forget Password?</span>
+                <button type="submit" class="submit-btn"><span id="span-color">Login</span></button>
+                <p>Don't have an account? <span onclick="signup()">Signup</span></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
